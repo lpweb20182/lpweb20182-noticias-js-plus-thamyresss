@@ -19,6 +19,14 @@
     <h2>Cadastrar notícia</h2>
     <form onsubmit="salvar(this); return false;">
         <div>
+            <label for="frm-nome">Nome</label>
+            <input type="text" id="frm-nome" name="nome" required>
+        </div>
+        <div>
+            <label for="frm-email">E-mail</label>
+            <input type="text" id="frm-email" name="email" >
+        </div>
+        <div>
             <label for="frm-titulo">Título</label>
             <input type="text" id="frm-titulo" name="titulo" required>
         </div>
@@ -26,6 +34,11 @@
             <label for="frm-conteudo">Conteúdo</label>
             <textarea id="frm-conteudo" name="conteudo" cols="80" rows="5" required></textarea>
         </div>
+        <div>
+            <label for="frm-dataHora">Data e Hora da Publicação</label>
+            <input type="datetime-local" id="frm-dataHora" name="data" >
+        </div>
+        
         <div>
             <button type="submit">Salvar</button>
             <button type="reset" formnovalidate>Limpar</button>
